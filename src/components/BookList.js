@@ -15,13 +15,35 @@ const BookList = () => {
     }, [])
 
     
-
+    
     return (
+       
         <div className = "bookList">
+            <section className="bookDisplay">
+                {books.map((book) => {
+                    const { author, book_image, buy_links, description,
+                    price, primary_isbn10, publisher, rank, title, } = book
 
+                    return (
+                        <article key={rank} className="bookArticle">
+                            <div className="bookCard">
+                                <div className = "imageContainer">
+                                    <img src = {book_image} alt = {title}/>
+                                </div>
+                                <h3>{title}</h3>
+                                <p>{description}</p>
+                                <p>{author}</p>
+                            </div>
+                        </article>
+                    )
+                })}
+            </section>
         </div>
+        
     )
-}
+            }
 
-export default BookList;
+
+export default BookList ;
+
 

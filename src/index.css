@@ -35,6 +35,11 @@ input {
   font-size: 1rem;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
 /* Header Styles */
 
 header {
@@ -59,8 +64,39 @@ h1 {
 /* BookList Styles */
 
 .bookList {
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(206, 206, 190);
+}
+
+.bookArticle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.bookCard h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.imageContainer {
+  height: 25%;
+  width: 25%;
+}
+
+.bookDisplay h3 {
+  font-size: 1.2rem;
+}
+
+.bookDisplay p {
+  font-size: .9rem;
+  max-width: 100%;
 }
 
 /* Footer */
