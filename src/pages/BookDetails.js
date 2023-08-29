@@ -2,9 +2,9 @@
 
 const BookDetails = () => {
     return (
-        <div>
-            BookDetails
-        </div>
+        <>
+            <p>Book Details</p>
+        </>
     )
 }
 

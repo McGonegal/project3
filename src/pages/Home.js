@@ -1,10 +1,12 @@
 import Header from "../components/Header"
+import BookList from "../components/BookList"
 
 const Home = () => {
     return (
-        <main>
+        <div className="mainBody">
             <Header />
-        </main>
+            <BookList />
+        </div>
     )
 }
 

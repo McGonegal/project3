@@ -11,8 +11,7 @@
   font-size: 125%;
 }
 
-main {
-  height: 100vh;
+.mainBody {
   background-color: rgb(206, 206, 190);
   font-family: 'Merriweather', serif; 
 }
@@ -55,4 +54,22 @@ header {
 
 h1 {
   padding-top: 1rem;
+}
+
+/* BookList Styles */
+
+.bookList {
+  height: 100vh;
+  background-color: rgb(206, 206, 190);
+}
+
+/* Footer */
+
+footer {
+  height: 10vh;
+  font-size: 1rem;
+  background-color: rgb(206, 206, 190);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
