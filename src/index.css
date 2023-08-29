@@ -1,1 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Playfair+Display:ital,wght@0,400;0,600;1,600&display=swap');
 
+/* */
+
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 125%;
+}
+
+main {
+  height: 100vh;
+  background-color: rgb(209, 209, 190);
+  font-family: 'Merriweather', serif; 
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: 0;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: 0;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Header Styles */
+
+header {
+  height: 100vh;
+}
+
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/Header.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  padding-top: 1rem;
+}

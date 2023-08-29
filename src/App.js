@@ -1,12 +1,11 @@
-import './App.css';
-import Main from './Components/Main'
+import Home from "./pages/Home"
 
-function App() {
-  return (
-    <div>
-      <Main />
-    </div>
-  );
+const App = () => {
+    return (
+        <>
+            <Home />
+        </>
+    )
 }
 
 export default App;
