@@ -4,7 +4,17 @@ import axios from "axios";
 
 const BookList = () => {
 
-    const [data, setData] = useState("")
+    const [books, setBooks] = useState([])
+
+    useEffect(() => {
+        const fetchBooks = async () => {
+            const res = await axios.get(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_BOOKS_API_KEY}`)
+            setBooks(res.data.results.books)
+        }
+        fetchBooks()
+    }, [])
+
+    
 
     return (
         <div className = "bookList">
@@ -15,4 +25,3 @@ const BookList = () => {
 
 export default BookList;
 
-guvR0lmlW4Ol8ELu93lTFXBGYNqzBmGp
